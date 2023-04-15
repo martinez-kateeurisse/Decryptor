@@ -45,7 +45,8 @@ while Retry == 'y':
 
     #Displaying the output with a design through the imported modules
     #Displaying the output
-    print("The plain text of " + user_input, "is " + decrypted_output)
+    print("The plain text of " + user_input, "is " )
+    print(pyfiglet.figlet_format(decrypted_output, font = "block"))
     
     #Asking the user whether to decrypt another message or not
     Retry = input("Do you want to decrypt another message? (Please type 'y' if yes and any key if no): ")
