@@ -9,6 +9,9 @@ import pyfiglet
 from colorama import Back, Fore, Style 
 
 #Asking the user's name and printing a greeting
+name = input("Enter your name: ")
+print(("Hello ").center(84, "*"),"\n")
+
 #Displaying the program's instructions
 
 #Using a while loop in case that the user wanted to decrypt another message
