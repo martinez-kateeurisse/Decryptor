@@ -5,11 +5,17 @@
 #Ask the user to input an encrypted text
 user_input = input("Please enter a string to decrypt: ")
 #Check each character of the user's input
-#If '*', change to 'a'
+decrypted_output = ""
+for i in range(len(user_input)):
+    #If '*', change to 'a'
+    if user_input[i] == "*":
+        decrypted_output += "a"
+    else:
+        decrypted_output += user_input[i]
 #If '&', change to 'e'
 #If '#', change to 'i'
 #If '+', change to 'o'
 #If '!', change to 'u'
 
 #Print the output
-
+print(decrypted_output)
