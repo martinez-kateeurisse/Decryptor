@@ -1,3 +1,5 @@
+#Kate Eurisse Martinez_BSCPE 1-5_Decryption
+
 #DECRYPTION
 #A Python Script that accepts a string as encrypted text and then the program will decrypt it using the following character substitute:
 #'a' = *, 'e' = & , 'i' = # , 'o' = + 'u' = !
@@ -5,7 +7,7 @@
 #Ask the user to input an encrypted text
 user_input = input("Please enter a string to decrypt: ")
 #Check each character of the user's input
-decrypted_output = ""
+decrypted_output = "" #initializing output variable
 for i in range(len(user_input)):
     #If '*', change to 'a'
     if user_input[i] == "*":
@@ -25,5 +27,5 @@ for i in range(len(user_input)):
     else:
         decrypted_output += user_input[i]
 
-#Print the output
-print(decrypted_output)
+#Displaying the output
+print("The plain text of " + user_input, "is " + decrypted_output)
