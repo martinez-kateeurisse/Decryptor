@@ -4,6 +4,10 @@
 #A Python Script that accepts a string as encrypted text and then the program will decrypt it using the following character substitute:
 #'a' = *, 'e' = & , 'i' = # , 'o' = + 'u' = !
 
+#Importing modules for the program's design and text formatting
+import pyfiglet 
+from colorama import Back, Fore, Style 
+
 #Using a while loop in case that the user wanted to decrypt another message
 Retry = 'y'
 while Retry == 'y':
