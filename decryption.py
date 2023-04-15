@@ -44,12 +44,26 @@ while Retry == 'y':
             decrypted_output += "u"
         else:
             decrypted_output += user_input[i]
-        
+ 
+    print(Fore.LIGHTYELLOW_EX, "⋆⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⊱∘────────────────────────────────────────────∘⊰⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋆\n")       
     #Displaying the output with a design through the imported modules
-    #Displaying the output
     print(f"{Fore.BLUE}The plain text of ", ('\033[91m' + user_input), '\033[94m' + "is:" + "\n")
+
+    #Output's upper border design
+    def output_border():
+        for i in range(len(decrypted_output)):
+            if i <= 5:
+                print(Fore.LIGHTCYAN_EX,"""██████████""", end ="""░░""")
+            else:
+                pass
+        print("\n")
+    output_border()    
+    
     print(Fore.MAGENTA,Style.BRIGHT,pyfiglet.figlet_format(decrypted_output, font = "block"))
     
+    #Output's lower border design
+    output_border()
+
     #Asking the user whether to decrypt another message or not
     Retry = input(f"{Fore.GREEN}\n\n\nDo you want to decrypt another message? (Please type 'y' if yes and any key if no): ")
     Retry = Retry.lower()
