@@ -16,11 +16,12 @@ for i in range(len(user_input)):
     #If '#', change to 'i'
     elif user_input[i] == "#":
         decrypted_output += "i"    
+    #If '+', change to 'o'
+    elif user_input[i] == "+":
+        decrypted_output += "o"
     else:
         decrypted_output += user_input[i]
 
-
-#If '+', change to 'o'
 #If '!', change to 'u'
 
 #Print the output
