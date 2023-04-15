@@ -9,11 +9,11 @@ import pyfiglet
 from colorama import Back, Fore, Style 
 
 #Asking the user's name and printing a greeting
-name = input("Enter your name: ")
-print(("Hello ").center(84, "*"),"\n")
+name = input(f"{Fore.RED} Enter your name: "+ Fore.RESET)
+print(Back.LIGHTBLACK_EX, Fore.LIGHTCYAN_EX, ("Hello " + name).center(84, "*") + Back.RESET, "\n")
 
 #Displaying the program's instructions
-print("This program will decrypt your encrypted text using the following character substitute:")
+print(f"{Fore.GREEN}This program will decrypt your encrypted text using the following character substitute:")
 char_eq = "'a' = *,  'e' = & , 'i' = #, 'o' = + ,'u' = !"
 print(char_eq.center(85, " "), "\n")
 
@@ -21,7 +21,7 @@ print(char_eq.center(85, " "), "\n")
 Retry = 'y'
 while Retry == 'y':
     #Ask the user to input an encrypted text
-    user_input = input("Please enter a string to decrypt: ")
+    user_input = input(f"{Fore.RED}Please enter a string to decrypt: " + Fore.RESET)
     #Check each character of the user's input
     decrypted_output = "" #initializing output variable
     for i in range(len(user_input)):
@@ -45,11 +45,11 @@ while Retry == 'y':
 
     #Displaying the output with a design through the imported modules
     #Displaying the output
-    print("The plain text of " + user_input, "is " )
-    print(pyfiglet.figlet_format(decrypted_output, font = "block"))
+    print(f"{Fore.BLUE}The plain text of ", ('\033[91m' + user_input), '\033[94m' + "is:" + "\n")
+    print(Fore.MAGENTA,Style.BRIGHT,pyfiglet.figlet_format(decrypted_output, font = "block"))
     
     #Asking the user whether to decrypt another message or not
-    Retry = input("Do you want to decrypt another message? (Please type 'y' if yes and any key if no): ")
+    Retry = input(f"{Fore.GREEN}\n\n\nDo you want to decrypt another message? (Please type 'y' if yes and any key if no): ")
     Retry = Retry.lower()
 
 #Displaying thank you message    
