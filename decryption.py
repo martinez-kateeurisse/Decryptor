@@ -8,6 +8,9 @@
 import pyfiglet 
 from colorama import Back, Fore, Style 
 
+#Asking the user's name and printing a greeting
+#Displaying the program's instructions
+
 #Using a while loop in case that the user wanted to decrypt another message
 Retry = 'y'
 while Retry == 'y':
@@ -34,9 +37,12 @@ while Retry == 'y':
         else:
             decrypted_output += user_input[i]
 
+    #Displaying the output with a design through the imported modules
     #Displaying the output
     print("The plain text of " + user_input, "is " + decrypted_output)
     
     #Asking the user whether to decrypt another message or not
     Retry = input("Do you want to decrypt another message? (Please type 'y' if yes and any key if no): ")
-    Retry = Retry.lower()    
+    Retry = Retry.lower()
+
+#Displaying thank you message    
