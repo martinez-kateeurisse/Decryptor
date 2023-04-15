@@ -9,7 +9,9 @@ import pyfiglet
 from colorama import Back, Fore, Style 
 
 #Asking the user's name and printing a greeting
+print("//" * 20)
 name = input(f"{Fore.RED} Enter your name: "+ Fore.RESET)
+print("//"*20, "\n\n") 
 print(Back.LIGHTBLACK_EX, Fore.LIGHTCYAN_EX, ("Hello " + name).center(84, "*") + Back.RESET, "\n")
 
 #Displaying the program's instructions
@@ -42,7 +44,7 @@ while Retry == 'y':
             decrypted_output += "u"
         else:
             decrypted_output += user_input[i]
-
+        
     #Displaying the output with a design through the imported modules
     #Displaying the output
     print(f"{Fore.BLUE}The plain text of ", ('\033[91m' + user_input), '\033[94m' + "is:" + "\n")
