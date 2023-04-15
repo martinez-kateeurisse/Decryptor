@@ -10,9 +10,12 @@ for i in range(len(user_input)):
     #If '*', change to 'a'
     if user_input[i] == "*":
         decrypted_output += "a"
+    #If '&', change to 'e'
+    elif user_input[i] == "&":
+        decrypted_output += "e"
     else:
         decrypted_output += user_input[i]
-#If '&', change to 'e'
+
 #If '#', change to 'i'
 #If '+', change to 'o'
 #If '!', change to 'u'
