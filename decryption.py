@@ -3,6 +3,7 @@
 #'a' = *, 'e' = & , 'i' = # , 'o' = + 'u' = !
 
 #Ask the user to input an encrypted text
+user_input = input("Please enter a string to decrypt: ")
 #Check each character of the user's input
 #If '*', change to 'a'
 #If '&', change to 'e'
