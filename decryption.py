@@ -24,6 +24,7 @@ Retry = 'y'
 while Retry == 'y':
     #Ask the user to input an encrypted text
     user_input = input(f"{Fore.RED}Please enter a string to decrypt: " + Fore.RESET)
+    print("\n")
     #Check each character of the user's input
     decrypted_output = "" #initializing output variable
     for i in range(len(user_input)):
@@ -67,5 +68,11 @@ while Retry == 'y':
     #Asking the user whether to decrypt another message or not
     Retry = input(f"{Fore.GREEN}\n\n\nDo you want to decrypt another message? (Please type 'y' if yes and any key if no): ")
     Retry = Retry.lower()
-
+    #The program will decide depending on the user's input
+    if Retry == 'y':
+        print("\n\n",("="*85),"\n\n")
+    else:
+        print("\n\n")
+        break
+    
 #Displaying thank you message    
