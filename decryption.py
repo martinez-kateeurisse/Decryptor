@@ -13,6 +13,9 @@ name = input("Enter your name: ")
 print(("Hello ").center(84, "*"),"\n")
 
 #Displaying the program's instructions
+print("This program will decrypt your encrypted text using the following character substitute:")
+char_eq = "'a' = *,  'e' = & , 'i' = #, 'o' = + ,'u' = !"
+print(char_eq.center(85, " "), "\n")
 
 #Using a while loop in case that the user wanted to decrypt another message
 Retry = 'y'
