@@ -8,6 +8,17 @@
 import pyfiglet 
 from colorama import Back, Fore, Style 
 
+#For Header
+print(Fore.CYAN, """
+                                ──────▄▀▄─────▄▀▄
+                                ─────▄█░░▀▀▀▀▀░░█▄ 
+                                ─▄▄──█░░░░░░░░░░░█──▄▄
+                                █▄▄█─█░░▀░░┬░░▀░░█─█▄▄█ """ + Fore.YELLOW,"""
+                    ░▒█▀▀▄░█▀▀░█▀▄░█▀▀▄░█░░█░▄▀▀▄░▀█▀░░▀░░▄▀▀▄░█▀▀▄
+                    ░▒█░▒█░█▀▀░█░░░█▄▄▀░█▄▄█░█▄▄█░░█░░░█▀░█░░█░█░▒█
+                    ░▒█▄▄█░▀▀▀░▀▀▀░▀░▀▀░▄▄▄▀░█░░░░░▀░░▀▀▀░░▀▀░░▀░░▀ """)
+print(Fore.WHITE, " "*17 , "="* 20 + "PROBLEM 2" + "="* 20 ,"\n")
+
 #Asking the user's name and printing a greeting
 print("//" * 20)
 name = input(f"{Fore.RED} Enter your name: "+ Fore.RESET)
